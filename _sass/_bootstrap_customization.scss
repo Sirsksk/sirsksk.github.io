@@ -1,250 +1,70 @@
-// Slate 4.3.1
+// Superhero 4.3.1
 // Bootswatch
 
 
 // Variables ===================================================================
 
-@mixin btn-shadow($color){
-  @include gradient-y-three-colors(lighten($color, 6%), $color, 60%, darken($color, 4%));
-  filter: none;
-}
-
-@mixin btn-shadow-inverse($color){
-  @include gradient-y-three-colors(darken($color, 18%), darken($color, 15%), 40%, darken($color, 13%));
-  filter: none;
-}
+$web-font-path: "https://fonts.googleapis.com/css?family=Lato:300,400,700" !default;
+@import url($web-font-path);
 
 // Navbar ======================================================================
 
 .navbar {
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-
-  .container {
-    padding: 0;
-  }
-
-  .navbar-toggler {
-    border-color: rgba(0, 0, 0, 0.6);
-  }
-
-  &-fixed-top {
-    border-width: 0 0 1px 0;
-  }
-
-  &-fixed-bottom {
-    border-width: 1px 0 0 0;
-  }
-
-  .nav-link {
-    padding: 1rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-
-    &:hover,
-    &:focus {
-      @include btn-shadow-inverse($gray-800);
-      border-left: 1px solid rgba(0, 0, 0, 0.2);
-    }
-  }
-
-  &-brand {
-    padding: 0.75rem 1rem calc(54px - 0.75rem - 30px);
-    margin-right: 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-item.active .nav-link {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-  }
-
-  &-nav .nav-item + .nav-item {
-    margin-left: 0;
-  }
-
-  &.bg-light {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-
-    .nav-link {
-      &:hover,
-      &:focus {
-        @include btn-shadow-inverse($gray-600);
-        border-left: 1px solid rgba(0, 0, 0, 0.2);
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-expand-sm {
-    .navbar-brand,
-    .nav-link {
-      border: none !important;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-expand-md {
-    .navbar-brand,
-    .nav-link {
-      border: none !important;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar-expand-lg {
-    .navbar-brand,
-    .nav-link {
-      border: none !important;
-    }
-  }
+  font-size: $font-size-sm;
 }
 
 // Buttons =====================================================================
 
 .btn {
-  border-color: rgba(0, 0, 0, 0.6);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-
-  &:not([disabled]):not(.disabled).active,
-  &.disabled {
-    border-color: rgba(0, 0, 0, 0.6);
-    box-shadow: none;
-  }
-
-  &:hover,
-  &:focus,
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled):active:hover,
-  &:not([disabled]):not(.disabled).active:hover {
-    border-color: rgba(0, 0, 0, 0.6);
-  }
-}
-
-.btn-primary {
-  @include btn-shadow($primary);
-
-  &:not([disabled]):not(.disabled):hover,
-  &:not([disabled]):not(.disabled):focus,
-  &:not([disabled]):not(.disabled):active:hover,
-  &:not([disabled]):not(.disabled).active:hover {
-    @include btn-shadow-inverse($primary);
-  }
-}
-
-.btn-secondary {
-  @include btn-shadow($secondary);
-
-  &:not([disabled]):not(.disabled):hover,
-  &:not([disabled]):not(.disabled):focus,
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled).active {
-    @include btn-shadow-inverse($secondary);
-  }
-}
-
-.btn-success {
-  @include btn-shadow($success);
-  color: $white;
-
-  &:not([disabled]):not(.disabled):hover,
-  &:not([disabled]):not(.disabled):focus,
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled).active {
-    @include btn-shadow-inverse($success);
-  }
-}
-
-.btn-info {
-  @include btn-shadow($info);
-  color: $white;
-
-  &:not([disabled]):not(.disabled):hover,
-  &:not([disabled]):not(.disabled):focus,
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled).active {
-    @include btn-shadow-inverse($info);
-  }
-}
-
-.btn-warning {
-  @include btn-shadow($warning);
-  color: $white;
-
-  &:not([disabled]):not(.disabled):hover,
-  &:not([disabled]):not(.disabled):focus,
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled).active {
-    @include btn-shadow-inverse($warning);
-  }
-}
-
-.btn-danger {
-  @include btn-shadow($danger);
-
-  &:not([disabled]):not(.disabled):hover,
-  &:not([disabled]):not(.disabled):focus,
-  &:not([disabled]):not(.disabled):active,
-  &:not([disabled]):not(.disabled).active {
-    @include btn-shadow-inverse($danger);
-  }
-}
-
-.btn-link,
-.btn-link:hover {
-  border-color: transparent;
-}
-
-.btn-group,
-.btn-group-vertical {
-
-  .btn.active {
-    border-color: rgba(0, 0, 0, 0.6);
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      @if $enable-gradients {
+        background: $value linear-gradient(180deg, mix($white, $value, 15%), $value) repeat-x;
+      } @else {
+        background-color: $value;
+      }
+    }
   }
 }
 
 // Typography ==================================================================
 
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  
-  html {
-  font-size: 1rem;
+.dropdown-menu {
+
+  font-size: $font-size-sm;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
+.dropdown-header {
+  font-size: $font-size-sm;
 }
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
+.blockquote-footer {
+  color: $body-color;
 }
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-     }
-   }
-}
-
 
 // Tables ======================================================================
 
 .table {
+  font-size: $font-size-sm;
 
-  &-primary,
-  &-secondary,
-  &-success,
-  &-info,
-  &-warning,
-  &-danger {
+  .thead-dark th {
+    color: $white;
+  }
+
+  a:not(.btn) {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .dropdown-menu a {
+    text-decoration: none;
+  }
+
+  .text-muted {
+    color: $text-muted;
+  }
+
+  &-dark {
     color: #fff;
   }
 
@@ -363,96 +183,34 @@ h1, h2, h3, h4, h5, h6 {
 
 // Forms =======================================================================
 
-legend {
-  color: #fff;
-}
-
-.input-group-addon {
-  @include btn-shadow($secondary);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  color: $white;
+label,
+.radio label,
+.checkbox label,
+.help-block {
+  font-size: $font-size-sm;
 }
 
 // Navs ========================================================================
 
-.nav-tabs {
-
+.nav-tabs,
+.nav-pills {
   .nav-link,
   .nav-link:hover {
-    color: #fff;
-  }
-}
-
-.nav-pills {
-
-  .nav-link {
-    @include btn-shadow($gray-800);
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    color: #fff;
-
-    &:hover {
-      @include btn-shadow-inverse($gray-800);
-      border: 1px solid rgba(0, 0, 0, 0.6);
-    }
+    color: $body-color;
   }
 
-  .nav-link.active,
-  .nav-link:hover {
-    background-color: transparent;
-    @include btn-shadow-inverse($gray-800);
-    border: 1px solid rgba(0, 0, 0, 0.6);
-  }
-
-  .nav-link.disabled,
-  .nav-link.disabled:hover {
-    @include btn-shadow($gray-800);
+  .nav-link.disabled {
     color: $nav-link-disabled-color;
   }
 }
 
-.pagination {
-
-  .page-link {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    @include btn-shadow($gray-800);
-
-    &:hover {
-      @include btn-shadow-inverse($gray-800);
-      text-decoration: none;
-    }
-  }
-
-  .page-item.active .page-link {
-    @include btn-shadow-inverse($gray-800);
-  }
-
-  .page-item.disabled .page-link {
-    @include btn-shadow($gray-800);
-  }
-}
-
-.breadcrumb {
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  background-color: transparent;
-  @include btn-shadow($gray-800);
-
-  a,
-  a:hover {
-    color: #fff;
-  }
+.page-link:hover,
+.page-link:focus {
+  color: #fff;
+  text-decoration: none;
 }
 
 // Indicators ==================================================================
-
-.alert {
-
-  .close {
-    color: $close-color;
-    text-decoration: none;
-  }
-}
 
 .alert {
   border: none;
@@ -466,25 +224,28 @@ legend {
 
   @each $color, $value in $theme-colors {
     &-#{$color} {
-      background-color: $value;
-    }
-  }
-
-  &-light {
-    &,
-    & a:not(.btn),
-    & .alert-link {
-      color: $body-bg;
+      @if $enable-gradients {
+        background: $value linear-gradient(180deg, mix($white, $value, 15%), $value) repeat-x;
+      } @else {
+        background-color: $value;
+      }
     }
   }
 }
 
 .badge {
-
-  &-success,
   &-warning,
   &-info {
     color: $white;
+  }
+}
+
+.close {
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
   }
 }
 
@@ -492,13 +253,20 @@ legend {
 
 // Containers ==================================================================
 
-.jumbotron {
-  border: 1px solid rgba(0, 0, 0, 0.6);
-}
+.modal {
+  &-header,
+  &-footer {
+    background-color: $table-hover-bg;
 
-.list-group {
+    .close {
+      color: #fff;
+      text-shadow: none;
+      opacity: 0.5;
 
-  &-item:hover {
-    background-color: darken($gray-900, 5%);
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
   }
 }
