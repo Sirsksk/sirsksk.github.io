@@ -233,12 +233,7 @@ input,
 // Progress bars ===============================================================
 
 // Containers ==================================================================
-.card {
+.list-group {
   color: #fff;
-
-  &-light {
-    &, > th, > td {
-      background-color: $light;
-    }
-  }
+   background-color: $light; 
 }
