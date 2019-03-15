@@ -122,15 +122,15 @@ $progress-bar-color:                $primary !default;
 
 // List group
 
-$list-group-border-color:           $gray-300 !default;
+$list-group-border-color:           $primary !default;
 
 $list-group-hover-bg:               $gray-200 !default;
-$list-group-active-color:           $body-color !default;
-$list-group-active-bg:              $gray-200 !default;
-$list-group-active-border-color:    $gray-300 !default;
+$list-group-active-color:           $light !default;
+$list-group-active-bg:              $light !default;
+$list-group-active-border-color:    $light !default;
 
-$list-group-disabled-color:         $gray-500 !default;
-$list-group-disabled-bg:            $white !default;
+$list-group-disabled-color:         $light !default;
+$list-group-disabled-bg:            $light !default;
 
 $list-group-action-color:           $list-group-active-color !default;
 
