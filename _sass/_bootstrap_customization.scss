@@ -233,7 +233,13 @@ input,
     color: darken($gray-300, 20%);
   }
 }
-
+// List
+.list-group-item-mine {
+  background-color: $primary;
+  border-top: 1px solid $primary;
+  border-left-color: $primary;
+  border-right-color: $primary;
+}
 // Progress bars ===============================================================
 
 // Containers ==================================================================
