@@ -13,16 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Nick Coleman's Webpage
-email: ""
+title: Andres Priego
+email: "hello@andrespriego.com"
 description: >- # this means to ignore newlines until "baseurl:"
-  A website project by Nick Coleman
-#baseurl: "/colemannick.github.io" # the subpath of your site, e.g. /blog
+  A website project by Andres Priego
+#baseurl: "/Sirsksk.github.io" # the subpath of your site, e.g. /blog
 #url: "https://github.com" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: nick_coleman21
-#github_username:  colemannick
+twitter_username: sirsk
+github_username:  Sirsksk
 
-repository: "colemannick/colemannick.github.io"
+repository: "Sirsksk/Sirsksk.github.io"
 
 # Build settings
 plugins:
