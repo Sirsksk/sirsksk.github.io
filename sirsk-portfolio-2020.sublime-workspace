@@ -1,0 +1,275 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sect",
+				"sect_serv"
+			],
+			[
+				"SE",
+				"client_secret"
+			],
+			[
+				"mas",
+				"masdiseno_webpage"
+			],
+			[
+				"movie",
+				"movie_list"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 14506,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/BRM12374/Documents/Sirsksk.github.io",
+		"/Users/BRM12374/Documents/Sirsksk.github.io/_includes"
+	],
+	"file_history":
+	[
+		"/Users/BRM12374/Documents/Sirsksk/README.md",
+		"/Users/BRM12374/Desktop/_variables.scss",
+		"/Users/BRM12374/Desktop/_bootswatch.scss",
+		"/Users/BRM12374/Desktop/portfolio/portfolio.html",
+		"/Users/BRM12374/Desktop/tailwind/public/index.html",
+		"/Users/BRM12374/Desktop/03. Acuse Recibo DIOT MARZO 2020.pdf",
+		"/Users/BRM12374/Desktop/MoneyTalks/web-api-auth-examples-master/authorization_code/public/index.html",
+		"/Users/BRM12374/Desktop/MoneyTalks/web-api-auth-examples-master/authorization_code/app.js",
+		"/Users/BRM12374/Desktop/MoneyTalks/web-api-auth-examples-master/client_credentials/app.js",
+		"/Users/BRM12374/Desktop/moneytalks/server.js",
+		"/Library/Application Support/Adobe/Adobe Photoshop CC 2019/AMT/application.xml",
+		"/Library/Application Support/Adobe/Adobe Photoshop CC 2019/AMT/SLConfig.xml",
+		"/Users/BRM12374/Desktop/readme.md",
+		"/Users/BRM12374/.zshrc",
+		"/Users/BRM12374/Documents/projects/web_projects/masdiseno_WP/masdiseno_wm/staticfiles/.keep",
+		"/Users/BRM12374/Documents/projects/web_projects/masdiseno_WP/masdiseno_wm/static/.keep",
+		"/Users/BRM12374/Documents/projects/web_projects/masdiseno_WP/readme.md",
+		"/Users/BRM12374/szhrc",
+		"/Users/BRM12374/Documents/projects/web_projects/masdiseno_WP/requirements.txt",
+		"/Users/BRM12374/Documents/projects/pipjango/pg_ident.conf",
+		"/usr/local/var/postgres/postgresql.conf",
+		"/Users/BRM12374/Desktop/tonymusic/myenv/tonypage/requirements.txt",
+		"/Users/BRM12374/Documents/projects/masdiseno/webmanager/requirements.txt",
+		"/usr/local/var/postgres/pg_hba.config",
+		"/Users/BRM12374/Documents/projects/sirskp/webmanager/requirements.txt",
+		"/Users/BRM12374/Documents/projects/sirskp/webmanager/mysite/wsgi.py",
+		"/Users/BRM12374/Documents/projects/sirskp/masdiseno/webmanager/mdsite/settings.py",
+		"/Users/BRM12374/Documents/projects/sirskp/masdiseno/masdiseno_webpage/mdwp/mdwp/settings.py",
+		"/Users/BRM12374/Documents/projects/sirskp/masdiseno/masdiseno_webpage/masdiseno_webpage/settings.py",
+		"/.bash_profile",
+		"/Users/BRM12374/.bash_profile",
+		"/Users/BRM12374/Downloads/Alfonsina - interview.m4a",
+		"/Users/BRM12374/Downloads/noun_utility bill_77089.svg",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/.git/.ignore",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/templates/base.html",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/pyWorkshop/urls.py",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/movies/urls.py",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/pyWorkshop/settings.py",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/movies/views.py",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/templates/movies.html",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/movies/tests.py",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/movies/admin.py",
+		"/Users/BRM12374/Documents/projects/pyWorkshop/movies/models.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 14506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sirsk-portfolio-2020.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
