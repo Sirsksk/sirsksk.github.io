@@ -9,28 +9,26 @@
       <div class="col-sm">
         <ul class="list-unstyled">
           <li>
-            {%- if site.author -%}
               {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
           </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
-          {%- endif -%}
         </ul>
       </div>
 
 
-      <div class="col-sm text-right">
+      <div class="col-sm text-center">
         <p>{{- site.description | escape -}}</p>
+        <p> Feel free to contact me:</p>
 
         <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
+          <a href="https://www.linkedin.com/in/andresgpc/">Linkedin</a>
+        </p>
+        <a href="/assets/AndresPriego_Mkt_Acc_Mngr_2020_Resume.pdf" target="_blank">Resume</a>
+        <p>
+           {%- if site.email -%}
+              <a href="mailto:{{ site.email }}">
+                {{ site.email }}
+              </a>
+          {%- endif -%}
         </p>
       </div>
 
