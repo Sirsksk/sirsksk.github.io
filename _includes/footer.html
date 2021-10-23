@@ -1,36 +1,39 @@
 
 <div class="py-5 border-top">
-  <div class="container">
-
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
-    <div class="row">
-
-      <div class="col-sm">
-        <ul class="list-unstyled">
-          <li>
-              {{ site.author | escape }}
-            <p>{{- site.description | escape -}}</p>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="col-md text-center">
-        <p> Feel free to contact me:</p>
-        <p>
-          <a href="https://www.linkedin.com/in/andresgpc/">Linkedin</a>
-        </p>
-        <a href="/assets/AndresPriegoCV2021.pdf" target="_blank">Resume</a>
-        <p>
-          <br>
-          {%- if site.email -%}
-
-          <a href="mailto:{{ site.email }}"> email
-          </a>
-          {%- endif -%}
-        </p>
+    <div class="container">
+  
+      <p class="h5 mb-3">{{ site.title | escape }}</p>
+  
+      <div class="row">
+  
+        <div class="col-sm">
+          <ul class="list-unstyled">
+            <li>
+                {{ site.author | escape }}
+              <p>{{- site.description | escape -}}</p>
+            </li>
+          </ul>
+        </div>
+  
+  
+        <div class="col-md text-center">
+          <p> Feel free to contact me:</p>
+          <p>
+            <a href="https://www.linkedin.com/in/andresgpc/">LinkedIn</a>
+          </p>
+          <a href="/assets/AndresPriegoCV2021.pdf" target="_blank">Resume</a>
+          <p>
+            <br>
+            {%- if site.email -%}
+            <a href="mailto:{{ site.email }}"> Email
+            </a>
+            {%- endif -%}
+          </p>
+          <p>
+            <a href="https://www.github.com/Sirsksk/">GitHub</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  
